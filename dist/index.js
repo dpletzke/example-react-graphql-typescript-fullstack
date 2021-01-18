@@ -16,9 +16,9 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
     const orm = yield core_1.MikroORM.init({
         entities: [Post_1.Post],
         dbName: 'lireddit',
-        type: 'postgresql',
         user: 'postgres',
         password: 'postgres',
+        type: 'postgresql',
         debug: !constants_1.__prod__
     });
     const post = orm.em.create(Post_1.Post, { title: 'My first Post' });

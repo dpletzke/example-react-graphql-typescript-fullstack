@@ -6,9 +6,9 @@ const main = async () => {
   const orm = await MikroORM.init({
     entities: [Post],
     dbName: 'lireddit',
-    type: 'postgresql',
     user: 'postgres',
     password: 'postgres',
+    type: 'postgresql',
     debug: !__prod__
   });
 
