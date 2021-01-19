@@ -8,8 +8,8 @@ const main = async () => {
   orm.getMigrator().up(); //auto-run migrations
   // const post = orm.em.create(Post, {title: 'My first Post'})
   // await orm.em.persistAndFlush(post);
-  const posts = await orm.em.find(Post, {});
-  console.log(posts);
+  // const posts = await orm.em.find(Post, {});
+  // console.log(posts);
 }
 
 main().catch(err => {
